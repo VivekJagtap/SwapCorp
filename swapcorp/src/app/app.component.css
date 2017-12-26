@@ -1,0 +1,61 @@
+.example-container {
+    /* width: 500px; */
+    height: 700px;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+  }
+  
+  .example-sidenav-content {
+    display: flex;
+    height: 100%;
+   
+    align-items: center;
+    justify-content: center;
+  }
+
+  .example-sidenav {
+    padding: 20px;
+    width:180px; 
+  }
+  .mat-drawer-container {
+    background-color: #f1eaf9;
+    color: #fff;
+}
+
+.mat-drawer-container[_ngcontent-c0] {
+    background-color: white;
+    color: #0a0505;
+}
+.mat-drawer {
+  background-color: #f5ebfb;
+  color: rgba(0,0,0,.87);
+}
+
+.mat-toolbar {
+    background: #7509b7;
+    color: rgba(253, 253, 253, 0.87);
+}
+ a:hover {
+  color: #cfc8c8;
+  text-decoration: underline;
+}
+.acolor{
+  color:rgb(253, 253, 253);
+  float:right;
+}
+
+.example-sidenav-content{
+  background-color: white;
+}
+.nav-cust-right{
+  position: absolute;
+  right:30px;
+  top: 10px;
+}
+/* .window{
+  margin-top:7px;
+  margin-left:1100px;
+       }  */
+
+@media(max-width:480px){
+
+} 

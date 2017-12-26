@@ -1,0 +1,17 @@
+
+<!---------------- Tabs for Register and SignIn ---------------->
+
+<div fxLayout="row" fxLayoutAlign="space-around center"> 
+  <div fxLayout="column" fxFlex="10"></div>  
+  <div fxLayout="column" fxFlex="60" >
+      <mat-tab-group>
+          <mat-tab label="SignIn" >
+             <app-signin></app-signin>
+          </mat-tab>
+          <mat-tab label="Register" class="matlabel">
+              <app-register></app-register>
+          </mat-tab>
+      </mat-tab-group>
+  </div>  
+  <div fxLayout="column" fxFlex="10"></div> 
+</div>

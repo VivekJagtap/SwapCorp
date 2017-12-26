@@ -1,0 +1,30 @@
+<br><br>
+
+  <div fxLayout="row" fxLayoutAlign="space-around center"> 
+      <div fxLayout="column" fxFlex="25"></div>  
+      <div fxLayout="column" fxFlex="90" >
+           
+      <div class="example-container">
+        <mat-form-field>
+          <input matInput type="email" placeholder="Enter your email" [(ngModel)]="signin.email" [formControl]="email" required>
+          <mat-error *ngIf="email.invalid">{{getErrorMessage()}}</mat-error>
+        </mat-form-field>
+
+        <mat-form-field hintLabel="Max 10 characters">
+            <input matInput placeholder="Enter your password" [type]="hide ? 'password' : 'text'" maxlength="10" [(ngModel)]="signin.password" [formControl]="password" required  >
+            <mat-icon matSuffix (click)="hide = !hide">{{hide ? 'visibility' : 'visibility_off'}}</mat-icon>
+            <mat-error *ngIf="password.invalid">{{getErrorMessage()}}</mat-error>
+        </mat-form-field>    
+
+      </div>
+      </div>  
+      <div fxLayout="column" fxFlex="25"></div> 
+  </div>
+<br><br>
+  <div fxLayout="row" fxLayoutAlign="space-around center"> 
+      <div fxLayout="column" fxFlex="30"></div>  
+      <div fxLayout="column" fxFlex="20" >
+          <button mat-raised-button color="primary" (click)="onSignin(signin);">Signin</button>
+      </div>  
+      <div fxLayout="column" fxFlex="40"></div> 
+  </div>
